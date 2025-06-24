@@ -1,0 +1,6 @@
+{"level":30,"time":"2025-06-23T22:37:18.009Z","pid":39332,"hostname":"MDT-Desktop","message":"Logger initialized","logFile":"C:\\Users\\mrtab\\Desktop\\DEv stuff\\logs\\pipeline-2025-06-23T22-37-18.005Z.log","nodeVersion":"v20.13.1","platform":"win32"}
+{"level":30,"time":"2025-06-23T22:37:18.133Z","pid":39332,"hostname":"MDT-Desktop","msg":"Starting data processing pipeline..."}
+{"level":30,"time":"2025-06-23T22:37:18.133Z","pid":39332,"hostname":"MDT-Desktop","msg":"Initializing pipeline with 15 threads"}
+{"level":30,"time":"2025-06-23T22:37:18.133Z","pid":39332,"hostname":"MDT-Desktop","msg":"Generating 1000000 sample records..."}
+{"level":30,"time":"2025-06-23T22:37:23.133Z","pid":39332,"hostname":"MDT-Desktop","msg":"Sample data generated at C:\\Users\\mrtab\\Desktop\\DEv stuff\\data\\sample_data.json"}
+{"level":50,"time":"2025-06-23T22:37:23.140Z","pid":39332,"hostname":"MDT-Desktop","msg":"Pipeline failed"}

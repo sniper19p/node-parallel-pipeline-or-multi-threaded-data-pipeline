@@ -1,0 +1,4 @@
+{"level":30,"time":"2025-06-23T22:34:22.754Z","pid":23668,"hostname":"MDT-Desktop","message":"Logger initialized","logFile":"C:\\Users\\mrtab\\Desktop\\DEv stuff\\logs\\pipeline-2025-06-23T22-34-22.749Z.log","nodeVersion":"v20.13.1","platform":"win32"}
+{"level":30,"time":"2025-06-23T22:34:22.879Z","pid":23668,"hostname":"MDT-Desktop","msg":"Starting data processing pipeline..."}
+{"level":30,"time":"2025-06-23T22:34:22.879Z","pid":23668,"hostname":"MDT-Desktop","msg":"Initializing pipeline with 15 threads"}
+{"level":50,"time":"2025-06-23T22:34:22.881Z","pid":23668,"hostname":"MDT-Desktop","msg":"Pipeline failed"}

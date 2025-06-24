@@ -1,0 +1,48 @@
+{"level":30,"time":"2025-06-23T22:43:59.988Z","pid":5908,"hostname":"MDT-Desktop","message":"Logger initialized","logFile":"C:\\Users\\mrtab\\Desktop\\DEv stuff\\logs\\pipeline-2025-06-23T22-43-59.984Z.log","nodeVersion":"v20.13.1","platform":"win32"}
+{"level":30,"time":"2025-06-23T22:44:00.114Z","pid":5908,"hostname":"MDT-Desktop","msg":"Starting data processing pipeline..."}
+{"level":30,"time":"2025-06-23T22:44:00.114Z","pid":5908,"hostname":"MDT-Desktop","msg":"Initializing pipeline with 15 threads"}
+{"level":30,"time":"2025-06-23T22:44:00.114Z","pid":5908,"hostname":"MDT-Desktop","msg":"Generating 1000000 sample records..."}
+{"level":30,"time":"2025-06-23T22:44:05.166Z","pid":5908,"hostname":"MDT-Desktop","msg":"Sample data generated at C:\\Users\\mrtab\\Desktop\\DEv stuff\\data\\sample_data.json"}
+{"level":30,"time":"2025-06-23T22:44:05.172Z","pid":5908,"hostname":"MDT-Desktop","msg":"Dashboard server started on port 3000"}
+{"level":30,"time":"2025-06-23T22:44:05.172Z","pid":5908,"hostname":"MDT-Desktop","msg":"Dashboard URL: http://localhost:3000"}
+{"level":30,"time":"2025-06-23T22:44:05.172Z","pid":5908,"hostname":"MDT-Desktop","msg":"Initializing thread pool with 15 workers"}
+{"level":30,"time":"2025-06-23T22:44:05.181Z","pid":5908,"hostname":"MDT-Desktop","msg":"Thread pool initialized with 15 workers"}
+{"level":30,"time":"2025-06-23T22:44:05.183Z","pid":5908,"hostname":"MDT-Desktop","msg":"Opening data source from file: C:\\Users\\mrtab\\Desktop\\DEv stuff\\data\\sample_data.json"}
+{"level":30,"time":"2025-06-23T22:44:05.224Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 1 initialized"}
+{"level":30,"time":"2025-06-23T22:44:05.226Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 1 ready to process data"}
+{"level":30,"time":"2025-06-23T22:44:05.226Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 2 initialized"}
+{"level":30,"time":"2025-06-23T22:44:05.226Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 2 ready to process data"}
+{"level":30,"time":"2025-06-23T22:44:05.226Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 3 initialized"}
+{"level":30,"time":"2025-06-23T22:44:05.227Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 3 ready to process data"}
+{"level":30,"time":"2025-06-23T22:44:05.228Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 11 initialized"}
+{"level":30,"time":"2025-06-23T22:44:05.228Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 11 ready to process data"}
+{"level":30,"time":"2025-06-23T22:44:05.228Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 10 initialized"}
+{"level":30,"time":"2025-06-23T22:44:05.229Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 10 ready to process data"}
+{"level":30,"time":"2025-06-23T22:44:05.231Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 12 initialized"}
+{"level":30,"time":"2025-06-23T22:44:05.231Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 12 ready to process data"}
+{"level":30,"time":"2025-06-23T22:44:05.231Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 0 initialized"}
+{"level":30,"time":"2025-06-23T22:44:05.232Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 0 ready to process data"}
+{"level":30,"time":"2025-06-23T22:44:05.235Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 5 initialized"}
+{"level":30,"time":"2025-06-23T22:44:05.235Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 5 ready to process data"}
+{"level":30,"time":"2025-06-23T22:44:05.235Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 9 initialized"}
+{"level":30,"time":"2025-06-23T22:44:05.236Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 9 ready to process data"}
+{"level":30,"time":"2025-06-23T22:44:05.236Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 4 initialized"}
+{"level":30,"time":"2025-06-23T22:44:05.236Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 4 ready to process data"}
+{"level":30,"time":"2025-06-23T22:44:05.236Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 7 initialized"}
+{"level":30,"time":"2025-06-23T22:44:05.236Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 7 ready to process data"}
+{"level":30,"time":"2025-06-23T22:44:05.236Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 6 initialized"}
+{"level":30,"time":"2025-06-23T22:44:05.236Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 6 ready to process data"}
+{"level":30,"time":"2025-06-23T22:44:05.237Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 8 initialized"}
+{"level":30,"time":"2025-06-23T22:44:05.237Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 8 ready to process data"}
+{"level":30,"time":"2025-06-23T22:44:05.244Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 14 initialized"}
+{"level":30,"time":"2025-06-23T22:44:05.244Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 14 ready to process data"}
+{"level":30,"time":"2025-06-23T22:44:05.245Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 13 initialized"}
+{"level":30,"time":"2025-06-23T22:44:05.245Z","pid":5908,"hostname":"MDT-Desktop","msg":"Worker 13 ready to process data"}
+{"level":30,"time":"2025-06-23T22:44:07.880Z","pid":5908,"hostname":"MDT-Desktop","msg":"Loaded 1000000 records from JSON file"}
+{"level":30,"time":"2025-06-23T22:44:07.890Z","pid":5908,"hostname":"MDT-Desktop","msg":"Opening data sink: ./output/processed_data.json"}
+{"level":30,"time":"2025-06-23T22:44:07.890Z","pid":5908,"hostname":"MDT-Desktop","msg":"Output stream opened: json"}
+{"level":30,"time":"2025-06-23T22:44:07.891Z","pid":5908,"hostname":"MDT-Desktop","msg":"Pipeline status changed: running -> running"}
+{"level":30,"time":"2025-06-23T22:44:08.016Z","pid":5908,"hostname":"MDT-Desktop","msg":"Client connected: 6NsyC72P9Ci5DpB9AAAB. Total clients: 1"}
+{"level":30,"time":"2025-06-23T22:44:23.239Z","pid":5908,"hostname":"MDT-Desktop","msg":"Pipeline status changed: running -> completed"}
+{"level":30,"time":"2025-06-23T22:44:23.239Z","pid":5908,"hostname":"MDT-Desktop","msg":"Pipeline processing complete. Processed 1000 batches, 1000000 records."}
+{"level":50,"time":"2025-06-23T22:44:23.240Z","pid":5908,"hostname":"MDT-Desktop","msg":"Pipeline failed"}

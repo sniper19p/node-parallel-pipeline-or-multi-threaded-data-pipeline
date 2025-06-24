@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipeline Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .card { background: white; padding: 20px; margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+        .metric { text-align: center; }
+        .metric-value { font-size: 2em; font-weight: bold; color: #2196F3; }
+        .metric-label { color: #666; margin-top: 5px; }
+        .status { padding: 5px 15px; border-radius: 20px; color: white; font-weight: bold; }
+        .status.running { background: #4CAF50; }
+        .status.completed { background: #2196F3; }
+        .status.failed { background: #f44336; }
+        .workers { margin-top: 20px; }
+        .worker { display: inline-block; margin: 5px; padding: 10px; background: #e3f2fd; border-radius: 5px; }
+        #log { height: 200px; overflow-y: auto; background: #000; color: #0f0; padding: 10px; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Multi-Threaded Pipeline Dashboard</h1>
+        
+        <div class="card">
+            <h2>Pipeline Status: <span id="status" class="status">initializing</span></h2>
+            <p>Elapsed Time: <span id="elapsed">0s</span></p>
+        </div>
+        
+        <div class="card">
+            <h2>Performance Metrics</h2>
+            <div class="metrics-grid">
+                <div class="metric">
+                    <div class="metric-value" id="throughput">0</div>
+                    <div class="metric-label">Records/sec</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value" id="processed">0</div>
+                    <div class="metric-label">Processed</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value" id="memory">0</div>
+                    <div class="metric-label">Memory (MB)</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value" id="cpu">0</div>
+                    <div class="metric-label">CPU %</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Workers</h2>
+            <div id="workers" class="workers">No workers active</div>
+        </div>
+        
+        <div class="card">
+            <h2>Activity Log</h2>
+            <div id="log"></div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        
+        function updateMetrics(metrics) {
+            document.getElementById('status').textContent = metrics.status;
+            document.getElementById('status').className = 'status ' + metrics.status;
+            document.getElementById('elapsed').textContent = Math.round(metrics.elapsedTime / 1000) + 's';
+            document.getElementById('throughput').textContent = metrics.throughput || 0;
+            document.getElementById('processed').textContent = metrics.recordsProcessed || 0;
+            document.getElementById('memory').textContent = metrics.currentMemoryUsage || 0;
+            document.getElementById('cpu').textContent = metrics.cpuUsage || 0;
+        }
+        
+        function updateWorkers(workers) {
+            const container = document.getElementById('workers');
+            if (!workers || workers.length === 0) {
+                container.innerHTML = 'No workers active';
+                return;
+            }
+            
+            container.innerHTML = workers.map(worker => 
+                '<div class="worker">Worker ' + worker.id + ': ' + (worker.status || 'unknown') + '</div>'
+            ).join('');
+        }
+        
+        function addLog(message) {
+            const log = document.getElementById('log');
+            const time = new Date().toLocaleTimeString();
+            log.innerHTML += '<div>[' + time + '] ' + message + '</div>';
+            log.scrollTop = log.scrollHeight;
+        }
+        
+        socket.on('metrics_update', updateMetrics);
+        socket.on('workers_update', updateWorkers);
+        socket.on('status_change', (data) => {
+            addLog('Status changed: ' + data.prevStatus + ' → ' + data.newStatus);
+        });
+        socket.on('pipeline_complete', (data) => {
+            addLog('Pipeline completed with status: ' + data.status);
+        });
+        
+        // Request initial data
+        socket.emit('request_metrics');
+        socket.emit('request_workers');
+        
+        addLog('Dashboard connected');
+    </script>
+</body>
+</html>
