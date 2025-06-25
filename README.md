@@ -35,8 +35,8 @@ A high-performance, scalable data processing system built with Node.js Worker Th
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/node-parallel-pipeline.git
-cd node-parallel-pipeline
+git clone https://github.com/sniper19p/node-parallel-pipeline-or-multi-threaded-data-pipeline
+cd node-parallel-pipeline-or-multi-threaded-data-pipeline
 
 # Install dependencies
 npm install
